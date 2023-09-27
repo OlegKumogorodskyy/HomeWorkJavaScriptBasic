@@ -10,4 +10,6 @@ if (fingerNumber === '1') {
     alert("Ring finger");
 } else if (fingerNumber === '5') {
     alert("Pinky");
-} 
+} else {
+    alert("Invalid finger number. Please enter a number from 1 to 5.");
+}
