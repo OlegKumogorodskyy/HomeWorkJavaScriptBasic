@@ -14,3 +14,5 @@ function removeElement(array, item, newEl) {
   const newArray = removeElement(myArray, itemToRemove, newItem);
   console.log(newArray);
   
+
+  
