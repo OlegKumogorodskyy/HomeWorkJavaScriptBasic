@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example List</title>
+</head>
+<body>
+    <script>
+      
+        const items = ["Item 1", "Item 2", "Item 3"];
+
+      
+        const list = document.createElement("ul");
+
+     
+        items.forEach(item => {
+            const listItem = document.createElement("li");
+            listItem.textContent = item;
+            list.appendChild(listItem);
+        });
+
+ 
+        document.body.appendChild(list);
+    </script>
+</body>
+</html>
