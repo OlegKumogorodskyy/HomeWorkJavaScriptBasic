@@ -50,11 +50,15 @@ document.getElementById("getLocationButton").addEventListener("click", function(
     }
 
 
-function showPosition(position) {
-    const lat = position.coords.latitude;
-    const lon = position.coords.longitude;
-    document.getElementById("locationInfo").textContent = "Latitude: " + lat + ", Longitude: " + lon;
-}
+    function showPosition(position) {
+        const lat = position.coords.latitude;
+        const lon = position.coords.longitude;
+        const locationInfo = document.getElementById("locationInfo");
+    
+        locationInfo.innerHTML = "Latitude: " + lat + ", Longitude: " + lon +
+                                 "<br><a href='https://www.google.com/maps/?q=" + 
+                                 lat + "," + lon + "' target='_blank'>View on Google Maps</a>";
+    }
 
 function showError(error) {
     switch(error.code) {
